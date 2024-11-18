@@ -1,0 +1,94 @@
+body {
+  background-color: #484644;
+}
+.im1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.im2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.tree {
+  background-color: rgb(95, 50, 38);
+  width: 23px;
+  height: 130px;
+  position: absolute;
+  top: 100px;
+  left: 681px;
+}
+.list {
+  background-color: rgb(71, 143, 84);
+  width: 60px;
+  height: 90px;
+  position: absolute;
+  top: 50px;
+  left: 664px;
+}
+.road {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #aeedff;
+  overflow: hidden;
+}
+.cabin {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: darkred;
+  border-radius: 5px;
+  top: 7px;
+  left: 66px;
+}
+.car {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background-color: red;
+  border-radius: 10px;
+  bottom: 20px;
+  animation: drive 4s linear infinite;
+  top: 132px;
+}
+
+.wheel {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  top: 50px;
+  left: 81px;
+}
+
+.wheel:first-child {
+  left: 10px;
+  bottom: -10px;
+}
+
+.wheel:last-child {
+  right: 10px;
+  bottom: -10px;
+}
+
+@keyframes drive {
+  0% {
+    left: -120px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes wheel {
+  0% {
+    transform: rotate(30deg);
+    left: -120px;
+  }
+  100% {
+    left: 100%;
+    transform: rotate(380deg);
+  }
+}
